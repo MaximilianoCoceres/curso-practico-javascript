@@ -72,7 +72,7 @@ function calcularPerimetroCuadrado(){
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    alert(perimetro + " cm");
 }
 
 
@@ -81,7 +81,7 @@ function calcularAreaCuadrado(){
     const value = input.value;
 
     const area = areaCuadrado(value);
-    alert(area);
+    alert(area + " cm^2");
 }
 
 //triangulo
@@ -96,7 +96,7 @@ function calcularPerimetroTriangulo(){
     console.log(typeof (value));
 
     const perimetro = perimetroTriangulo(value, value2,value3);
-    alert(perimetro);
+    alert(perimetro + " cm");
 }
 
 
@@ -107,7 +107,7 @@ function calcularAreaTriangulo(){
     const value4 = input4.value;
 
     const area = areaTriangulo(value3,value4);
-    alert(area);
+    alert(area + " cm");
 }
 
 //circulo
@@ -117,7 +117,7 @@ function calcularDiametroCirculo(){
     const value = input.value;
 
     const diametro = diametroCirculo(value);
-    alert(diametro);
+    alert(diametro + " cm");
 }
 
 function calcularCircunferenciaCirculo(){
@@ -125,7 +125,7 @@ function calcularCircunferenciaCirculo(){
     const value = input.value;
 
     const circunferencia = perimetroCirculo(value);
-    alert(circunferencia);
+    alert(circunferencia + " cm");
 }
 
 function calcularAreaCirculo(){
@@ -133,5 +133,5 @@ function calcularAreaCirculo(){
     const value = input.value;
 
     const area = areaCirculo(value);
-    alert(area);
+    alert(area + " cm");
 }

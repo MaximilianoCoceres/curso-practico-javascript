@@ -232,14 +232,14 @@ header p{
     }
 
     .triangulo div{
-        width: 25em;
-        height: 20em;
+        width: 27em;
+        height: 22em;
     }
 
     .triangulo form{
         font-size: 10px;
         position: relative;
-        top: 10em;
+        top: 12em;
     }
 
     .triangulo form input{
