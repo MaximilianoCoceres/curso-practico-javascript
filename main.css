@@ -4,7 +4,7 @@ body{
     background-size: cover;
     background-attachment: fixed; */
 
-    background-color: #000;
+    background-color: rgb(205, 205, 205);
 
 }
 
@@ -12,90 +12,151 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2em;
+    padding: 2em;
 }
 
-.titulo-header{
-    font-size: 3em;
+.titulo{
+    font-size: 2em;
     font-weight: bold;
-    color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Secular One', sans-serif;
-    color: #ffffff;
-    text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93
+    margin-top: 2em;
 }
 
-header p{
-    font-size: 2em ;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+.titulo p{
+    font-size: 0.6em;
+    font-weight: lighter;
     text-align: center;
+    margin-bottom: 2em;
+}
+
+
+input{
+  appearance: none;
+  background-color: rgb(109, 109, 109);
+  outline: none;
+  border: 1px solid black;
+  box-shadow: none;
+  margin-bottom: 5px;
+  position: relative;
+  color: white;
+
+}
+
+input:focus {
+    border:1px solid rgb(0, 0, 0);
+    background-color:transparent;
+    border-radius: 0.2em;
+    }
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input::before{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    content: "cm";
+    text-align: right;
 }
 
 .cuadrado{
     width: 20em;
-    height: 20em;
+    height: 30em;
     display: flex;
-    background-color: red; 
-    border: none;
+    background-color: rgb(150, 150, 150); 
+    border: 1px solid black;
+    border-radius: 0.4em;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 2em;
+    margin: 1em;
+}
+
+.cuadrado img{
+    width: 7em;
 }
 
 .cuadrado h2{
     font-family: 'Secular One', sans-serif;
+    font-weight: 100;
     font-size: 2em;
     color: #fff;
 }
 
-.cuadrado label{
+.cuadrado div label{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2em;
 
 }
 
-.cuadrado input{
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .cuadrado input{
     background-color: #f26464;
     border-style: inset;
     color: #fff;
     font-weight: bold;
    
-}
+} */
 
 .cuadrado button{
     margin-top: 1em;
-    border-radius: 1em;
+    border-radius: 0.4em;
     font-size: 0.8em;
     font-weight: bold;
     background-color: #fff;
-    color:rgb(140, 23, 23) ;
+    color:rgb(4, 86, 109) ;
     padding: 0.3em;
 }
 
 .cuadrado button:hover{
-    background-color:rgb(140, 23, 23);
+    background-color:rgb(4, 86, 109);
     cursor: pointer;
     color: #fff;
+    transition: 1s;
 }
 
 /***** triangulo *****/
 .triangulo div{
-    background-image: url(./img/png-transparent-green-triangle-illustration-penrose-triangle-equilateral-triangle-shape-green-triangle-angle-leaf-triangle-removebg-preview.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 35em;
+    width: 20em;
     height: 30em;
+    display: flex;
+    background-color: rgb(150, 150, 150); 
+    border: 1px solid black;
+    border-radius: 0.4em;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2em;
+    margin: 1em;
 
+}
 
-
+.triangulo img{
+    width: 7em;
 }
 
 .triangulo h2{
     text-align: center;
     position: relative;
-    top:7em;
     font-family: 'Secular One', sans-serif;
     font-size: 1.5em;
     color: #fff;
@@ -107,8 +168,6 @@ header p{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    position: relative;
-    top:10em;
 
 }
 
@@ -117,30 +176,32 @@ header p{
     font-size: 0.8em;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
+    margin: 0.5em;
 }
 
-.triangulo input{
+/* .triangulo input{
     background-color: rgb(80, 176, 32);
     border-style: inset;
     color: #fff;
     font-weight: bold;
    
-}
+} */
 
 .triangulo button{
     margin-top: 1em;
-    border-radius: 1em;
-    font-size: 0.7em;
+    border-radius: 0.4em;
+    font-size: 0.8em;
     font-weight: bold;
     background-color: #fff;
-    color:rgb(80, 176, 32) ;
+    color:rgb(4, 86, 109) ;
     padding: 3px;
 }
 
 .triangulo button:hover{
-    background-color:rgb(80, 176, 32);
+    background-color:rgb(4, 86, 109);
     cursor: pointer;
     color: #fff;
+    transition: 1s;
 }
 
 
@@ -153,18 +214,19 @@ header p{
 /***** circulo *****/
 
 .circulo{
-    border-radius: 50%;
-    max-width: 30em;
-    max-height: 30em;
-    width: 25em;
-    height: 25em;
+    width: 20em;
+    height: 30em;
     display: flex;
-    background-color: rgb(49, 118, 216);
-    border: none;
-    flex-direction: column;
+    background-color: rgb(150, 150, 150); 
+    border: 1px solid black;
+    border-radius: 0.4em;
     text-align: center;
-    justify-content: center;
-    margin-left: 20px;
+    justify-content: space-between;
+    padding: 2em;
+    margin: 1em;
+}
+.circulo img{
+    width: 7em;
 }
 
 .circulo h2{
@@ -172,8 +234,7 @@ header p{
     font-size: 1.5em;
     font-weight: bold;
     color: #fff;
-    position: relative;
-    top: 16px;
+    margin: 0.5em;
 }
 
 .circulo label{
@@ -181,95 +242,55 @@ header p{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
 
 }
 
-.circulo input{
+/* .circulo input{
     background-color: #163c9a;
     border-style: inset;
     color: #fff;
     font-weight: bold;
    
-}
+} */
 
 .circulo button{
     margin-top: 1em;
-    border-radius: 1em;
-    font-size: 0.7em;
+    border-radius: 0.4em;
+    font-size: 0.8em;
     font-weight: bold;
     background-color: #fff;
-    color:rgb(0, 7, 199);
+    color:rgb(4, 86, 109);
     text-align: center;
     display: flex;
     justify-content: center;
+    padding: 3px;
 
 }
 
 .seccion-circulo{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .circulo button:hover{
-    background-color:rgb(0, 7, 199);
+    background-color:rgb(4, 86, 109);
     cursor: pointer;
     color: #fff;
+    transition: 1s;
 }
 /***** End circulo *****/
 
-@media(max-width:768px){
+@media(max-width:1024px){
     .seccion{
         flex-direction:column;
     }
 
     .seccion section{
-        margin: 1em;
-    }
-
-    .cuadrado h2{
-        display: none;
-    }
-
-    .triangulo div{
-        width: 27em;
-        height: 22em;
-    }
-
-    .triangulo form{
-        font-size: 10px;
-        position: relative;
-        top: 12em;
-    }
-
-    .triangulo form input{
-        width: 8em;
-    }
-
-    .triangulo h2{
-        display: none;
-    }
-
-
-    .circulo {
-        width: 22em;
-        height: 22em;
-    }
-
-    .circulo h2{
-        display: none;
-    }
-
-    .circulo form{
-        position: relative;
-        top: 20px;
-    }
-}
-
-
-@media (max-width: 1024px){
-    .seccion{
         margin: 2em;
-        flex-direction: column;
-    }   
+    }
+
 }
